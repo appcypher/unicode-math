@@ -1,0 +1,29 @@
+{
+  "name": "unicode-math",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node --presets env src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcypher/unicode-math.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appcypher/unicode-math/issues"
+  },
+  "homepage": "https://github.com/appcypher/unicode-math#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-1": "^6.24.1"
+  }
+}
