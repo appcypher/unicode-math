@@ -5,3 +5,7 @@ authors = ["Steve Akinyemi <appcypher@outlook.com>"]
 edition = "2018"
 
 [dependencies]
+
+[[bin]]
+name = "unicode-math"
+path = "src/rust/main.rs"
