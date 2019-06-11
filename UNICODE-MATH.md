@@ -8,6 +8,10 @@
 
     ⁅ f(x) = ∫_(-∞)^∞ ▒ f̂(ξ)e^(2πξx) dξ ⁆
 
+- Render
+
+    <img src="http://latex.codecogs.com/svg.latex?f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi \xi x} \,d\xi" />
+
 ###### DETAILS
 - Alphanumerics
 
