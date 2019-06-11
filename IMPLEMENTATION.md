@@ -1,20 +1,3 @@
-### UNICODE MATH
-
-UnicodeMath aims to encode Maths expression in Unicode with as little special behavior as possible. As a result, UnicodeMath is more compact and easier to read than [La]TeX, ASCIIMath and most especially MathML.
-
-###### LATEX
-
-$$ f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi \xi x} \,d\xi $$
-
-###### UNICODE-MATH
-
-⁅ f(x) = ∫_(-∞)^∞ ▒ f̂(ξ)e^(2πξx) dξ ⁆
-
-###### RENDERED
-
-<img src="http://latex.codecogs.com/svg.latex?f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi \xi x} \,d\xi" />
-
-#### IMPLEMENTATION DETAILS
 - Alphanumerics
 
     The supported alphanumerics incude:
