@@ -1,5 +1,5 @@
 enum TokenKind {
-    VerticalSpace,
+    HorizontalSpace,
 }
 
 struct Lexer {

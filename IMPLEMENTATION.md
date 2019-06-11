@@ -33,6 +33,9 @@
     - Halfwidth and Fullwidth Forms U+FF0B, [U+FF1C - U+FF1E], U+FF3C, U+FF3E, U+FF5C, U+FF5E, U+FFE2, U+FFE9, U+FFEA, U+FFEB, U+FFEC
     https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
 
+- Operator Combinations
+    - / and =
+
 
 - Diacritics
 
@@ -45,15 +48,32 @@
 
 - Fractions
 
-    - Binary operator with / (U+002F)
+    - Basic Latin / (U+002F) - horizontal divider
 
-    Effect:
+        $$ \frac{a}{b} $$
+        ⁅ abc / d ⁆
 
-    Creates a horizontal divider between the numerator and denominator.
+    - General Punctuation ⁄ (U+2044) - skewed fraction
 
-    Examples:
+        $$ a \sdiv b $$
+        ⁅ abc ⁄ d ⁆
 
-    ⁅ abc/d ⁆
+    - Mathematical Operators  ∕ (U+2215) - skewed fraction
+
+        $$ a \ldiv b $$
+        ⁅ abc ∕ d ⁆
+
+    - Mathematical Operators ⊘ (U+2298) - skewed fraction
+
+        $$ a \ndiv b $$
+        ⁅ abc ⊘ d ⁆
+
+    - Latin-1 Supplement ¦ (U+00A6) - stack
+
+        $$ \sum_{k=0}^n {n \choose k} a^k b^{n-k} $$
+        ⁅ ∑_(k=0)^n ▒ (n¦k) a^k b^(n-k) ⁆
+
+- Subscript / Superscript
 
 - Spaces
 
@@ -73,6 +93,9 @@
     ⁅ ((a + c))/d ⁆
 
 
+
+
+
 - Delimiters
 
     `⁅` (U+2045) to start a math zone and `⁆` (U+2046) to end it
@@ -82,7 +105,7 @@
     Examples:
 
     ⁅ 2 + 1 = 3 ⁆
-    ⁅ f(x, n) = 𝛴_(i=0)^n x_i / 2 ⁆
+    ⁅ f(x, n) = ∑_(i=0)^n x_i / 2 ⁆
 
 
 - Nesting
@@ -90,6 +113,9 @@
     $$ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt {3 \cdot \frac{50} {100}} }}}}} $$
 
     ⁅ √√√√√√3 · (50 / 100) ⁆
+
+
+### GRAMMAR
 
 
 ### URLS
