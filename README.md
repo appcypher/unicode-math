@@ -1,5 +1,5 @@
 <div align=center>
-  <h1>UNICODE_MATH</h1>
+  <h1>UNICODE-MATH</h1>
 </div>
 
 This library contains a set of utilities for displaying and converting UnicodeMathv3.1 to other fromats like LaTex and HTML.
