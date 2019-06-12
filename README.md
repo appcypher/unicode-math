@@ -2,7 +2,7 @@
   <h1>UNICODE-MATH</h1>
 </div>
 
-This library contains a set of utilities for displaying and converting UnicodeMathv3.1 to other fromats like LaTex and HTML.
+This library contains a set of utilities for displaying and converting UnicodeMathv3.1 to other formats like LaTex and HTML.
 
 
 UnicodeMath aims to encode all possible Math expressions in Unicode with as little special behavior as possible. Since UnicodeMath is based on Unicode, it is more compact and easier to read than [La]TeX, ASCIIMath and most especially MathML.
