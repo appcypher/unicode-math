@@ -1,13 +1,13 @@
 - Alphanumerics
 
-    The supported alphanumerics incude:
+    Characters:
     - ASCII Alphanumeric Symbols [A-Z], [a-z], [0-9], U+003F
     - Unicode Mathematical Alphanumeric Symbols (UMAS) [U+1D400 – U+1D7FF]
     - Letterlike Symbols U+2102, U+2107, [U+210A–U+2113], U+2115, [U+2118 – U+2119], U+2124, [U+2128 – U+2129], U+212C, U+212F, U+2133, U+2135, [U+213C – U+2149], U+214B
     - Arabic Mathematical Alphabetic Symbols [U+1EE00 – U+1EEFF]
     - Greek and Coptic (???) [U+0390 - U+03FF]
-    https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
-    https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+    - https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+    - https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
 
     The following letter-like block ranges are not yet supported:
     - Latin Extended-A
@@ -16,6 +16,7 @@
 
 - Mathematical Operators
 
+    Characters:
     - ASCII Operators U+0021, U+0025, [U+002A - U+002F], [U+003A - U+003E], U+005C, U+007C, U+007E, U+00AC, U+00B1, U+00D7, U+00F7
     - Mathematical Operators [U+2200 - U+22FF]
     - Supplemental Mathematical Operators [U+2A0 - U+2AFF]
@@ -31,16 +32,20 @@
     - Small Variants Form [U+FE61 - U+FE68]
     - General Punctuation U+2016, [U+2032 - U+2034], U+2040, U+2044, U+2052
     - Halfwidth and Fullwidth Forms U+FF0B, [U+FF1C - U+FF1E], U+FF3C, U+FF3E, U+FF5C, U+FF5E, U+FFE2, U+FFE9, U+FFEA, U+FFEB, U+FFEC
-    https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+    - https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
 
 - Operator Combinations
-    - / and =
 
+    Notes:
+    - Combining `/` and an operator for negation
+        - ⁅ a /= b ⁆
+        - $$ a \neq b $$
 
 - Diacritics
 
+    Characters:
     - Combining Diacritical Marks [U+0300 - U+036F], [U+20D0 - U+20F0]
-    https://en.wikipedia.org/wiki/Combining_Diacritical_Marks
+    - https://en.wikipedia.org/wiki/Combining_Diacritical_Marks
 
     The following combining diatrical marks range are not supported:
     - Combining Diacritical Marks Extended (German) [U+1AB0 - U+1ABE]
@@ -48,74 +53,132 @@
 
 - Fractions
 
-    - Basic Latin / (U+002F) - horizontal divider
+    Characters:
+    - Basic Latin / (U+002F) - \slash
+        - ⁅ abc \slash d ⁆
+        - $$ \frac{a}{b} $$
 
-        $$ \frac{a}{b} $$
-        ⁅ abc / d ⁆
+    - General Punctuation ⁄ (U+2044) - \fracslash
+        - ⁅ abc \slash d ⁆
+        - $$ a \fracslash b $$
 
-    - General Punctuation ⁄ (U+2044) - skewed fraction
+    - Mathematical Operators ∕ (U+2215) - \divslash
+        - ⁅ abc ∕ d ⁆
+        - $$ a \divslash b $$
 
-        $$ a \sdiv b $$
-        ⁅ abc ⁄ d ⁆
+    - Mathematical Operators ∕ (U+29F8) - \xsol
+        - ⁅ abc ⊘ d ⁆
+        - $$ a \xsol b $$
 
-    - Mathematical Operators  ∕ (U+2215) - skewed fraction
-
-        $$ a \ldiv b $$
-        ⁅ abc ∕ d ⁆
-
-    - Mathematical Operators ⊘ (U+2298) - skewed fraction
-
-        $$ a \ndiv b $$
-        ⁅ abc ⊘ d ⁆
+    - Mathematical Operators ⊘ (U+2298) -
+        - ⁅ abc ⊘ d ⁆
+        - $$ a \ndiv b $$
 
     - Latin-1 Supplement ¦ (U+00A6) - stack
-
-        $$ \sum_{k=0}^n {n \choose k} a^k b^{n-k} $$
-        ⁅ ∑_(k=0)^n ▒ (n¦k) a^k b^(n-k) ⁆
+        - ⁅ ∑_(k=0)^n ▒ (n¦k) a^k b^(n-k) ⁆
+        - $$ \sum_{k=0}^n {n \choose k} a^k b^{n-k} $$
 
 - Subscript / Superscript
 
+    Characters:
+    - Latin Supllement ¹ ² ³
+    - Superscripts and Subscripts [U+2070 - U+209C]
+    - Basic Latin ^
+    - Basic Latin _
+
+    Contents from the following block ranges are not supported yet:
+    - Spacing Modifier Letters
+    - Phonetic Extensions
+    - Phonetic Extensions Supplement
+
+    Notes:
+    - A subscript followed by superscript or vice-versa
+        - ⁅ 𝛼^b_c ⁆
+        - $$ a^b_cz $$
+
+    - A bracketed superscipt or subscript
+        - ⁅ 𝛼^(b_c) ⁆
+        - $$ a^{b_c} $$
+
+    - Unicode subscript characters
+        - ⁅ n^3 = n³ = n⁽² ⁺ ¹⁾ ⁆
+        - ⁅ 𝛼₂³/(𝛽₂³ + 𝛾₂³) ⁆
+
+    - Commas and periods
+        - ⁅ 𝛼^() ⁆
+
+- Primes
+
+    Characters:
+    - Basic Latin '
+    - General Punctuation [U+2032 - U+2034]
+
 - Spaces
 
+    Characters:
     - ASCII Space (U+0020)
+    - ...
 
 
 - Invisibles
 
+    Characters:
     - General Punctuation [U+2061 - U+2064]
 
 - Associativity
 
-    - ASCII Brackets U+0028, U+0029, U+005B, U+005D, U+007B, U+007D
+    Characters:
+    - ASCII Brackets ( ) [ ] { } (U+0028, U+0029, U+005B, U+005D, U+007B, U+007D)
+    - Superscript Brackets ⁽ ⁾
+    - Subscript Brackets ₍ ₎
 
-    Examples:
+    Notes:
+    - Subscript / Superscript Operator - L to R
+        - ⁅ a_b_c ⁆
+        - ⁅ a^b^c ⁆
 
-    ⁅ ((a + c))/d ⁆
-
-
-
+    - To display brackets, the brackets must be escaped
+        - ⁅ ((a + c))/d ⁆
 
 
 - Delimiters
 
-    `⁅` (U+2045) to start a math zone and `⁆` (U+2046) to end it
-
-    Paragraphs within the delimiters are ignored.
+    Notes:
+    - `⁅` (U+2045) to start a math zone and `⁆` (U+2046) to end it
+    - Paragraphs within the delimiters are ignored.
 
     Examples:
-
-    ⁅ 2 + 1 = 3 ⁆
-    ⁅ f(x, n) = ∑_(i=0)^n x_i / 2 ⁆
+    - ⁅ 2 + 1 = 3 ⁆
+    - ⁅ f(x, n) = ∑_(i=0)^n ▒ x_i / 2 ⁆
 
 
 - Nesting
 
-    $$ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt {3 \cdot \frac{50} {100}} }}}}} $$
-
-    ⁅ √√√√√√3 · (50 / 100) ⁆
+    - $$ \sqrt{\sqrt{\sqrt{\sqrt{\sqrt{\sqrt {3 \cdot \frac{50} {100}} }}}}} $$
+    - ⁅ √√√√√√3 · (50 / 100) ⁆
 
 
 ### GRAMMAR
+
+    alphanumeric := ...
+
+    diacritic := ...
+
+    subatom := ...
+
+    atom := ...
+
+    binary_operator :=
+
+
+### MARKDOWN
+
+```unimath
+f(x, n) = ∑_(i=0)^n ▒ x_i / 2
+```
+
+⁅ f(x, n) = ∑_(i=0)^n ▒ x_i / 2 ⁆
+
 
 
 ### URLS
