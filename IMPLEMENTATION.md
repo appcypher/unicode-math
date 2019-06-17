@@ -81,7 +81,7 @@
 - Subscript / Superscript
 
     Characters:
-    - Latin Supllement ¹ ² ³
+    - Latin Suplement ¹ ² ³
     - Superscripts and Subscripts [U+2070 - U+209C]
     - Basic Latin ^
     - Basic Latin _
@@ -158,27 +158,19 @@
     - ⁅ √√√√√√3 · (50 / 100) ⁆
 
 
-### GRAMMAR
 
-    alphanumeric := ...
-
-    diacritic := ...
-
-    subatom := ...
-
-    atom := ...
-
-    binary_operator :=
-
-
-### MARKDOWN
-
-```unimath
-f(x, n) = ∑_(i=0)^n ▒ x_i / 2
+### USE IN MARKDOWNS
+Syntax marker for unicode math
+```
+    ```um
+    f(x, n) = ∑_(i=0)^n ▒ x_i / 2
+    ```
 ```
 
-⁅ f(x, n) = ∑_(i=0)^n ▒ x_i / 2 ⁆
-
+UnicodeMath delimiters
+```
+    ⁅ f(x, n) = ∑_(i=0)^n ▒ x_i / 2 ⁆
+```
 
 
 ### URLS

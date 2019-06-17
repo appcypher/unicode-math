@@ -1,0 +1,54 @@
+//
+
+
+alphabet =
+    |
+
+number =
+    |
+
+diacritic =
+    |
+
+unit =
+    |
+
+atom =
+    |
+
+
+// BINARY OPERATION
+
+/// fractions
+
+norm_slash_op =
+    |
+
+frac_slash_op =
+    |
+
+div_slash_op =
+    |
+
+xsol_slash_op =
+    |
+
+ndiv_slash_op =
+    |
+
+/// superscripts and subscripts
+
+sub_alphabet =
+    |
+
+sub_number =
+    |
+
+sub_unit =
+    |
+
+sub_atom =
+    |
+
+sub_op
+
