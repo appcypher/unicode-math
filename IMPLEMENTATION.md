@@ -4,7 +4,6 @@
     - ASCII Alphanumeric Symbols [A-Z], [a-z], [0-9], U+003F
     - Unicode Mathematical Alphanumeric Symbols (UMAS) [U+1D400 – U+1D7FF]
     - Letterlike Symbols U+2102, U+2107, [U+210A–U+2113], U+2115, [U+2118 – U+2119], U+2124, [U+2128 – U+2129], U+212C, U+212F, U+2133, U+2135, [U+213C – U+2149], U+214B
-    - Arabic Mathematical Alphabetic Symbols [U+1EE00 – U+1EEFF]
     - Greek and Coptic (???) [U+0390 - U+03FF]
     - https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
     - https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
@@ -12,6 +11,7 @@
     The following letter-like block ranges are not yet supported:
     - Latin Extended-A
     - Latin Extended-B
+    - Arabic Mathematical Alphabetic Symbols [U+1EE00 – U+1EEFF]
 
 
 - Mathematical Operators

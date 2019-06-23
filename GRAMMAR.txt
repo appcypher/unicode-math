@@ -1,14 +1,28 @@
-//
-
-
 alphabet =
-    |
+    | [A-Za-z] | U+003F | U+2102 | U+2107
+    | [U+210A – U+2113] | U+2115
+    | [U+2118 – U+2119] | U+2124
+    | [U+2128 – U+2129] | U+212C | U+212F | U+2133 | U+2135
+    | [U+213C – U+2149] | U+214B
 
-number =
-    |
+digit =
+    | [0-9]
 
 diacritic =
-    |
+    | [U+0300 - U+036F]
+    | [U+20D0 - U+20F0]
+
+combined_alphabet =
+    | alphabet diacritic*
+
+
+//
+
+word =
+    | combined_alphabet+
+
+number =
+    | digit+
 
 unit =
     |
